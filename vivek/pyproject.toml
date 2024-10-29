@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pillar-management-cicd"
+version = "0.1.0"
+description = ""
+authors = ["Tom Tang <ltang2@woolworths.com.au>"]
+readme = "README.md"
+packages = [{include = "cicd"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.7.2"
+jsonschema = "^4.22.0"
+fsspec = "^2024.5.0"
+gcsfs = "^2024.5.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
